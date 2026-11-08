@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -121,14 +121,14 @@ MonoBehaviour:
     y: 553
     width: 1466
     height: 380
-  m_MinSize: {x: 101, y: 126}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 231, y: 276}
+  m_MaxSize: {x: 10001, y: 10026}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,8 +300,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "UnityEditor.MainToolbarWindow\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: 1920
+    y: 43
     width: 1920
     height: 36
   m_SerializedDataModeController:
@@ -566,7 +566,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1624
+    x: 1920
     y: 632
     width: 1465
     height: 354
@@ -594,7 +594,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\d012396n\Documents\GitHub\colour-theory-prototype
   m_LockTracker:
@@ -613,10 +613,14 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 75562
+    - m_Data: 67410
     m_LastClickedID:
-      m_Data: 75562
-    m_ExpandedIDs: []
+      m_Data: 67410
+    m_ExpandedIDs:
+    - m_Data: 0
+    - m_Data: 67410
+    - m_Data: 1000000000
+    - m_Data: 2147483647
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -728,8 +732,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1467
-    y: 24
+    x: 3386
+    y: 79
     width: 453
     height: 907
   m_SerializedDataModeController:
@@ -779,8 +783,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 24
+    x: 1920
+    y: 79
     width: 362
     height: 527
   m_SerializedDataModeController:
@@ -803,13 +807,19 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -71766
-      - m_Data: -71726
-      - m_Data: -62270
-      - m_Data: -61550
+      - m_Data: -117824
+      - m_Data: -96814
+      - m_Data: -95554
+      - m_Data: -91320
+      - m_Data: -89252
+      - m_Data: -85312
+      - m_Data: -66884
+      - m_Data: -64662
+      - m_Data: -64362
+      - m_Data: -63824
+      - m_Data: -63664
       - m_Data: -60642
-      - m_Data: 77338
-      - m_Data: 77358
+      - m_Data: -12
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -856,8 +866,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 364
-    y: 24
+    x: 2283
+    y: 79
     width: 1101
     height: 527
   m_SerializedDataModeController:
@@ -1332,9 +1342,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -1.4221172, y: -0.10937953, z: 0.028717823}
+    m_Target: {x: 596.95276, y: 308.4642, z: -4.2823386}
     speed: 2
-    m_Value: {x: -1.4221172, y: -0.10937953, z: 0.028717823}
+    m_Value: {x: 596.95276, y: 308.4642, z: -4.2823386}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1384,9 +1394,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.128217
+    m_Target: 438.234
     speed: 2
-    m_Value: 7.128217
+    m_Value: 438.234
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1441,7 +1451,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1987
+    x: 2283
     y: 79
     width: 1101
     height: 527
@@ -1544,8 +1554,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 577
+    x: 1920
+    y: 632
     width: 1465
     height: 354
   m_SerializedDataModeController:
