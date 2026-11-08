@@ -7,10 +7,15 @@ public class CharacterController : MonoBehaviour
     public Rigidbody2D m_RB;
     [SerializeField] float m_moveSpeed;
     [SerializeField] float m_jumpStrength;
+	[SerializeField] GameManager m_GameManager;
+	[SerializeField] Vector3 m_Spawn;
+
+	bool hasSentData = false;
     Vector2 m_dir;
 
     private void Awake()
     {
+		m_GameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); // Auto Find
         m_RB = GetComponent<Rigidbody2D>();
     }
 
@@ -38,7 +43,12 @@ public class CharacterController : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		Debug.Log(collision.gameObject.name);
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		if (!hasSentData)
+		{
+			gameObject.transform.position = m_Spawn;
+			m_GameManager.ChangeDoorSequence(collision.gameObject.name);
+			hasSentData = true;
+			Destroy(collision.gameObject);
+		}
 	}
 }
