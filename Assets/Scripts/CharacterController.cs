@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class CharacterController : MonoBehaviour
 {
@@ -34,4 +35,10 @@ public class CharacterController : MonoBehaviour
     {
 
     }
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		Debug.Log(collision.gameObject.name);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
 }
