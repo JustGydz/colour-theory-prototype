@@ -10,7 +10,6 @@ public class PlayerInput : MonoBehaviour
     private void Awake()
     {
         m_inputActions = new InputSystem_Actions();
-        Debug.Log("Map generated");
     }
 
     private void OnEnable()
