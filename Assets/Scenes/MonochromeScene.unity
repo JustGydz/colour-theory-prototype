@@ -1837,7 +1837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
   m_RB: {fileID: 1666164469}
   m_moveSpeed: 5
-  m_jumpStrength: 3
+  m_jumpStrength: 5
   m_GameManager: {fileID: 1127874651}
   m_Spawn: {x: 0, y: 3, z: 0}
 --- !u!4 &1666164472
