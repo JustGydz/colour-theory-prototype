@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour
 
     private void Awake()
     {
-		m_GameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); // Auto Find
+		m_GameManager = GameObject.Find("GameManager")?.GetComponent<GameManager>(); // Auto Find
         m_RB = GetComponent<Rigidbody2D>();
     }
 
@@ -33,7 +33,6 @@ public class CharacterController : MonoBehaviour
 
     public void Handle_JumpInput()
     {
-        m_RB.AddForceY(m_jumpStrength, ForceMode2D.Impulse);
     }
 
     public void Handle_JumpCancel()
@@ -43,12 +42,15 @@ public class CharacterController : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (!hasSentData && collision.gameObject.CompareTag("Door") == true)
+		if (m_GameManager != null)
 		{
-			gameObject.transform.position = m_Spawn;
-			m_GameManager.ChangeDoorSequence(collision.gameObject.name);
-			hasSentData = true;
-			Destroy(collision.gameObject);
+			if (!hasSentData && collision.gameObject.CompareTag("Door") == true)
+			{
+				gameObject.transform.position = m_Spawn;
+				m_GameManager.ChangeDoorSequence(collision.gameObject.name);
+				hasSentData = true;
+				Destroy(collision.gameObject);
+			}
 		}
 	}
 }

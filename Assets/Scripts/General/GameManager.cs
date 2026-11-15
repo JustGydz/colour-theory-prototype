@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
+		if (SceneManager.GetActiveScene().buildIndex != 1 || SceneManager.GetActiveScene().buildIndex != 2)
+		{
+			m_EndPanel.transform.parent.gameObject.SetActive(false);
+		}
+
 		m_EndPanel = GameObject.Find("EndScreen");
 		m_EndSequenceText = GameObject.Find("SequenceText").GetComponent<TextMeshProUGUI>();
 		m_EndPanel.SetActive(false);

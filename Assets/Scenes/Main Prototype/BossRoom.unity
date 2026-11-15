@@ -2697,7 +2697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033be73f874af0b4cadd9d86bc3a770c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GateActor
-  m_destination: 0
+  m_destination: 4
   m_confirmScreen: {fileID: 400342661}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

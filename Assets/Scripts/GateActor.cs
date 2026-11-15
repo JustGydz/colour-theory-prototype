@@ -33,7 +33,23 @@ public class GateActor : MonoBehaviour
 
 	public void SwitchScene()
 	{
-		FindFirstObjectByType<SceneNavigation>().LoadMenuScene();
+		switch (m_destination)
+		{
+			default:
+				break;
+			case 4:
+				FindFirstObjectByType<SceneNavigation>().LoadWorldsHubScene();
+				break;
+			case 5:
+				FindFirstObjectByType<SceneNavigation>().LoadRedRestScene();
+				break;
+			case 6:
+				FindFirstObjectByType<SceneNavigation>().LoadGreenRestScene();
+				break;
+			case 7:
+				FindFirstObjectByType<SceneNavigation>().LoadBlueRestScene();
+				break;
+		}
 	}
 
 	public void HidePanel()
