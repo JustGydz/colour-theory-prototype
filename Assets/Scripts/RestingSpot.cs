@@ -6,7 +6,7 @@ public class RestingSpot : MonoBehaviour
 	[SerializeField] GameObject m_confirmScreen;
 	[SerializeField] GameObject m_restScreen;
 
-	private bool m_confirmRejected;
+	 private bool m_confirmRejected;
 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
