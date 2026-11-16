@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 561783883}
   - component: {fileID: 561783882}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: Quit Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -618,7 +618,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 581746611}
         m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
-        m_MethodName: LoadMenuScene
+        m_MethodName: QuitScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1389,7 +1389,7 @@ GameObject:
   - component: {fileID: 1442161197}
   - component: {fileID: 1442161196}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Quit Game Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main Menu
+  m_text: Quit Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

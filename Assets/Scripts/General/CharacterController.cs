@@ -42,15 +42,15 @@ public class CharacterController : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (m_GameManager != null)
-		{
-			if (!hasSentData && collision.gameObject.CompareTag("Door") == true)
-			{
-				gameObject.transform.position = m_Spawn;
-				m_GameManager.ChangeDoorSequence(collision.gameObject.name);
-				hasSentData = true;
-				Destroy(collision.gameObject);
-			}
-		}
+		//if (m_GameManager != null)
+		//{
+		//	if (!hasSentData && collision.gameObject.CompareTag("Door") == true)
+		//	{
+		//		gameObject.transform.position = m_Spawn;
+		//		m_GameManager.ChangeDoorSequence(collision.gameObject.name);
+		//		hasSentData = true;
+		//		Destroy(collision.gameObject);
+		//	}
+		//}
 	}
 }

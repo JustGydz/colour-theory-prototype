@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.Android.Types;
 using UnityEngine;
 
 public class GateActor : MonoBehaviour
@@ -27,7 +26,7 @@ public class GateActor : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Player"))
 		{
-			m_confirmScreen.SetActive(false);
+			m_confirmScreen?.SetActive(false);
 		}
 	}
 
