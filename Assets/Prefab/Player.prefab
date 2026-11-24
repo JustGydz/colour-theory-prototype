@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4467656377800812072}
   - component: {fileID: 5120249541109362443}
   - component: {fileID: 5488306581643702546}
+  - component: {fileID: 5859416894395203169}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -62,7 +63,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &4467656377800812072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
   m_RB: {fileID: 1497544176572794090}
+  m_PlayerSprite: {fileID: 8801589810449786923}
   m_moveSpeed: 3
   m_jumpStrength: 0
   m_GameManager: {fileID: 0}
@@ -130,6 +132,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
+--- !u!95 &5859416894395203169
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799059627823282580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9f4862764ddf35a4bbfe7d10d1ae6ac8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8069455050718850924
 GameObject:
   m_ObjectHideFlags: 0
